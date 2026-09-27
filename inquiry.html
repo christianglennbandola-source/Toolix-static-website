@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toolix - Contact & Inquiry</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar section-content">
+            <a href="index.html" class="nav-logo">
+                <h2 class="logo-text">Toolix</h2>
+            </a>
+            
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="material-symbols-outlined">close</button>
+                
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="menu.html" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Login.html" class="nav-link">Log in</a>
+                </li>
+                <li class="nav-item">
+                    <a href="inquiry.html" class="nav-link">Inquiry</a>
+                </li>
+            </ul>
+
+            <button id="menu-open-button" class="material-symbols-outlined">menu</button>
+        </nav>
+
+        <div class="inq-container" id="over">
+            <div class="inq-wrapper">
+
+                <div class="inq-heading">Contact & Inquiry</div>
+                <div class="inq-subheading">Reach out to our team or find answers below.</div>
+
+                <div class="inq-grid">
+
+                    <div class="inq-left">
+
+                        <div class="contact-section-title">Our Team Contacts</div>
+
+                        <div class="contact-card">
+                            <div class="contact-avatar" id="avatar-one"></div>
+                            <div class="contact-info">
+                                <div class="contact-name">Ethan Williams</div>
+                                <div class="contact-role">Web Developer</div>
+                                <div class="contact-detail">
+                                    <span class="material-symbols-outlined contact-icon">mail</span>
+                                    ethan.williams@toolix.com
+                                </div>
+                                <div class="contact-detail">
+                                    <span class="material-symbols-outlined contact-icon">call</span>
+                                    +1 (555) 201-4837
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-avatar" id="avatar-two"></div>
+                            <div class="contact-info">
+                                <div class="contact-name">Bart Simpson</div>
+                                <div class="contact-role">Toolmaker</div>
+                                <div class="contact-detail">
+                                    <span class="material-symbols-outlined contact-icon">mail</span>
+                                    bart.simpson@toolix.com
+                                </div>
+                                <div class="contact-detail">
+                                    <span class="material-symbols-outlined contact-icon">call</span>
+                                    +1 (555) 304-9921
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-avatar" id="avatar-three"></div>
+                            <div class="contact-info">
+                                <div class="contact-name">Piccolo</div>
+                                <div class="contact-role">Marketing Director</div>
+                                <div class="contact-detail">
+                                    <span class="material-symbols-outlined contact-icon">mail</span>
+                                    piccolo@toolix.com
+                                </div>
+                                <div class="contact-detail">
+                                    <span class="material-symbols-outlined contact-icon">call</span>
+                                    +1 (555) 487-6603
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="inq-form-title">Send Us a Message</div>
+
+                        <div class="inq-form">
+                            <div class="inq-field">
+                                <label for="inq-name">Full Name</label>
+                                <input type="text" id="inq-name" class="inq-input" placeholder="Your full name" />
+                            </div>
+                            <div class="inq-field">
+                                <label for="inq-email">Email</label>
+                                <input type="email" id="inq-email" class="inq-input" placeholder="Your email address" />
+                            </div>
+                            <div class="inq-field">
+                                <label for="inq-subject">Subject</label>
+                                <input type="text" id="inq-subject" class="inq-input" placeholder="What is this about?" />
+                            </div>
+                            <div class="inq-field">
+                                <label for="inq-message">Message</label>
+                                <textarea id="inq-message" class="inq-input inq-textarea" placeholder="Write your message here..."></textarea>
+                            </div>
+                            <button id="inq-submit" class="inq-btn">Send Message</button>
+                            <div id="inq-success" class="inq-success-msg"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="inq-right">
+
+                        <div class="faq-section-title">Frequently Asked Questions</div>
+
+                        <div class="faq-list">
+
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    What types of tools does Toolix sell?
+                                    <span class="material-symbols-outlined faq-icon">expand_more</span>
+                                </button>
+                                <div class="faq-answer">
+                                    Toolix carries a full range of hand tools and power tools including screwdrivers, drills, hammers, chainsaws, nails, and screws across three quality tiers — Rank 1 (entry-level), Rank 2 (professional), and Rank 3 (industrial).
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    How do I place an order?
+                                    <span class="material-symbols-outlined faq-icon">expand_more</span>
+                                </button>
+                                <div class="faq-answer">
+                                    Head to the Menu page, select your desired quantities using the + and - buttons on each product card, then click "Confirm Sell" to review your sales summary before finalizing your order.
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    What is the difference between the Rank tiers?
+                                    <span class="material-symbols-outlined faq-icon">expand_more</span>
+                                </button>
+                                <div class="faq-answer">
+                                    Rank 1 tools are budget-friendly options ideal for light home use. Rank 2 tools offer enhanced durability and performance suited for professionals. Rank 3 tools are our premium industrial-grade line built for heavy-duty, high-frequency use.
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    Do you offer bulk or wholesale pricing?
+                                    <span class="material-symbols-outlined faq-icon">expand_more</span>
+                                </button>
+                                <div class="faq-answer">
+                                    Yes! For bulk orders of 50 units or more per item, please contact Bart Simpson directly at bart.simpson@toolix.com to discuss wholesale pricing and delivery arrangements.
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    What is your return and warranty policy?
+                                    <span class="material-symbols-outlined faq-icon">expand_more</span>
+                                </button>
+                                <div class="faq-answer">
+                                    All Toolix products come with a 30-day return policy for defective items. Rank 2 tools carry a 1-year limited warranty and Rank 3 tools carry a 2-year limited warranty. Reach out to our team via the form on this page to initiate a return.
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    How long does delivery take?
+                                    <span class="material-symbols-outlined faq-icon">expand_more</span>
+                                </button>
+                                <div class="faq-answer">
+                                    Standard orders are processed within 1-2 business days and delivered within 5-7 business days. Expedited shipping is available at checkout for an additional fee. Large or bulk orders may require additional lead time.
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    Can I track my order?
+                                    <span class="material-symbols-outlined faq-icon">expand_more</span>
+                                </button>
+                                <div class="faq-answer">
+                                    Once your order is confirmed and dispatched, you will receive a tracking number via email. You can use that number on our courier partner's website to follow your shipment in real time.
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    Who do I contact for technical support?
+                                    <span class="material-symbols-outlined faq-icon">expand_more</span>
+                                </button>
+                                <div class="faq-answer">
+                                    For technical questions about a specific tool, contact Bart Simpson at bart.simpson@toolix.com or call +1 (555) 304-9921. For website or account issues, reach Ethan Williams at ethan.williams@toolix.com.
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    How do I create an account?
+                                    <span class="material-symbols-outlined faq-icon">expand_more</span>
+                                </button>
+                                <div class="faq-answer">
+                                    Click the "Log in" link in the navigation bar and switch to the Sign Up tab. Enter your email and create a password to register. You will be redirected to the homepage upon successful registration.
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    Where is Toolix located?
+                                    <span class="material-symbols-outlined faq-icon">expand_more</span>
+                                </button>
+                                <div class="faq-answer">
+                                    Toolix is headquartered at 482 Industrial Drive, Springfield, USA. Our warehouse and showroom are open Monday through Friday, 8:00 AM to 5:00 PM. Walk-in customers are welcome during business hours.
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <script src="script4.js"></script>
+</body>
+</html>

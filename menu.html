@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toolix E-commerce Website</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar section-content">
+            <a href="index.html" class="nav-logo">
+                <h2 class="logo-text">Toolix</h2>
+            </a>
+            
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="material-symbols-outlined">close</button>
+                
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="menu.html" class="nav-link">Items</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Login.html" class="nav-link">Log in</a>
+                </li>
+               
+                <li class="nav-item">
+                    <a href="inquiry.html" class="nav-link">Inquiries</a>
+                </li>
+            </ul>
+
+            <button id="menu-open-button" class="material-symbols-outlined">menu</button>
+        </nav>
+        
+        <div class="container">
+            <div class="title">Product Lists:</div>
+
+            <div class="product-header" id="over">
+
+                <div class="products">
+                    <div class="part1">
+                        <div class="img" id="img-p1"></div>
+                    </div>
+                    <div class="part2">
+                        <div class="name">Name: Standard Screwdriver</div>
+                        <div class="rank">Rank: 1</div>
+                        <div class="price">Price: $12</div>
+                        <label>Qty:</label>
+                        <input type="number" class="qty-input" value="0" readonly><br>
+                        <label>Total Price:</label>
+                        <input type="number" class="total-input" value="0" readonly>
+                        <div class="btn-grp">
+                            <button onclick="addOne(this, 12)" class="btn">+</button>
+                            <button onclick="subtractOne(this, 12)" class="btn">-</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <div class="part1">
+                        <div class="img" id="img-p2"></div>
+                    </div>
+                    <div class="part2">
+                        <div class="name">Name: Compact Electric Drill</div>
+                        <div class="rank">Rank: 1</div>
+                        <div class="price">Price: $45</div>
+                        <label>Qty:</label>
+                        <input type="number" class="qty-input" value="0" readonly><br>
+                        <label>Total Price:</label>
+                        <input type="number" class="total-input" value="0" readonly>
+                        <div class="btn-grp">
+                            <button onclick="addOne(this, 45)" class="btn">+</button>
+                            <button onclick="subtractOne(this, 45)" class="btn">-</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <div class="part1">
+                        <div class="img" id="img-p3"></div>
+                    </div>
+                    <div class="part2">
+                        <div class="name">Name: Wood Screws (50 Pack)</div>
+                        <div class="rank">Rank: 1</div>
+                        <div class="price">Price: $8</div>
+                        <label>Qty:</label>
+                        <input type="number" class="qty-input" value="0" readonly><br>
+                        <label>Total Price:</label>
+                        <input type="number" class="total-input" value="0" readonly>
+                        <div class="btn-grp">
+                            <button onclick="addOne(this, 8)" class="btn">+</button>
+                            <button onclick="subtractOne(this, 8)" class="btn">-</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <div class="part1">
+                        <div class="img" id="img-p4"></div>
+                    </div>
+                    <div class="part2">
+                        <div class="name">Name: Steel Nails (100 Pack)</div>
+                        <div class="rank">Rank: 1</div>
+                        <div class="price">Price: $6</div>
+                        <label>Qty:</label>
+                        <input type="number" class="qty-input" value="0" readonly><br>
+                        <label>Total Price:</label>
+                        <input type="number" class="total-input" value="0" readonly>
+                        <div class="btn-grp">
+                            <button onclick="addOne(this, 6)" class="btn">+</button>
+                            <button onclick="subtractOne(this, 6)" class="btn">-</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <div class="part1">
+                        <div class="img" id="img-p5"></div>
+                    </div>
+                    <div class="part2">
+                        <div class="name">Name: Standard Claw Hammer</div>
+                        <div class="rank">Rank: 1</div>
+                        <div class="price">Price: $15</div>
+                        <label>Qty:</label>
+                        <input type="number" class="qty-input" value="0" readonly><br>
+                        <label>Total Price:</label>
+                        <input type="number" class="total-input" value="0" readonly>
+                        <div class="btn-grp">
+                            <button onclick="addOne(this, 15)" class="btn">+</button>
+                            <button onclick="subtractOne(this, 15)" class="btn">-</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <div class="part1">
+                        <div class="img" id="img-p6"></div>
+                    </div>
+                    <div class="part2">
+                        <div class="name">Name: Electric Mini Chainsaw</div>
+                        <div class="rank">Rank: 1</div>
+                        <div class="price">Price: $85</div>
+                        <label>Qty:</label>
+                        <input type="number" class="qty-input" value="0" readonly><br>
+                        <label>Total Price:</label>
+                        <input type="number" class="total-input" value="0" readonly>
+                        <div class="btn-grp">
+                            <button onclick="addOne(this, 85)" class="btn">+</button>
+                            <button onclick="subtractOne(this, 85)" class="btn">-</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <div class="part1">
+                        <div class="img" id="img-p7"></div>
+                    </div>
+                    <div class="part2">
+                        <div class="name">Name: Ratcheting Screwdriver</div>
+                        <div class="rank">Rank: 2</div>
+                        <div class="price">Price: $22</div>
+                        <label>Qty:</label>
+                        <input type="number" class="qty-input" value="0" readonly><br>
+                        <label>Total Price:</label>
+                        <input type="number" class="total-input" value="0" readonly>
+                        <div class="btn-grp">
+                            <button onclick="addOne(this, 22)" class="btn">+</button>
+                            <button onclick="subtractOne(this, 22)" class="btn">-</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <div class="part1">
+                        <div class="img" id="img-p8"></div>
+                    </div>
+                    <div class="part2">
+                        <div class="name">Name: 20V Cordless Drill</div>
+                        <div class="rank">Rank: 2</div>
+                        <div class="price">Price: $95</div>
+                        <label>Qty:</label>
+                        <input type="number" class="qty-input" value="0" readonly><br>
+                        <label>Total Price:</label>
+                        <input type="number" class="total-input" value="0" readonly>
+                        <div class="btn-grp">
+                            <button onclick="addOne(this, 95)" class="btn">+</button>
+                            <button onclick="subtractOne(this, 95)" class="btn">-</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <div class="part1">
+                        <div class="img" id="img-p9"></div>
+                    </div>
+                    <div class="part2">
+                        <div class="name">Name: Zinc Screws (200 Pack)</div>
+                        <div class="rank">Rank: 2</div>
+                        <div class="price">Price: $18</div>
+                        <label>Qty:</label>
+                        <input type="number" class="qty-input" value="0" readonly><br>
+                        <label>Total Price:</label>
+                        <input type="number" class="total-input" value="0" readonly>
+                        <div class="btn-grp">
+                            <button onclick="addOne(this, 18)" class="btn">+</button>
+                            <button onclick="subtractOne(this, 18)" class="btn">-</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <div class="part1">
+                        <div class="img" id="img-p10"></div>
+                    </div>
+                    <div class="part2">
+                        <div class="name">Name: Galvanized Nails (250 Pack)</div>
+                        <div class="rank">Rank: 2</div>
+                        <div class="price">Price: $14</div>
+                        <label>Qty:</label>
+                        <input type="number" class="qty-input" value="0" readonly><br>
+                        <label>Total Price:</label>
+                        <input type="number" class="total-input" value="0" readonly>
+                        <div class="btn-grp">
+                            <button onclick="addOne(this, 14)" class="btn">+</button>
+                            <button onclick="subtractOne(this, 14)" class="btn">-</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <div class="part1">
+                        <div class="img" id="img-p11"></div>
+                    </div>
+                    <div class="part2">
+                        <div class="name">Name: Pro Framing Hammer</div>
+                        <div class="rank">Rank: 2</div>
+                        <div class="price">Price: $34</div>
+                        <label>Qty:</label>
+                        <input type="number" class="qty-input" value="0" readonly><br>
+                        <label>Total Price:</label>
+                        <input type="number" class="total-input" value="0" readonly>
+                        <div class="btn-grp">
+                            <button onclick="addOne(this, 34)" class="btn">+</button>
+                            <button onclick="subtractOne(this, 34)" class="btn">-</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <div class="part1">
+                        <div class="img" id="img-p12"></div>
+                    </div>
+                    <div class="part2">
+                        <div class="name">Name: 40V Battery Chainsaw</div>
+                        <div class="rank">Rank: 2</div>
+                        <div class="price">Price: $165</div>
+                        <label>Qty:</label>
+                        <input type="number" class="qty-input" value="0" readonly><br>
+                        <label>Total Price:</label>
+                        <input type="number" class="total-input" value="0" readonly>
+                        <div class="btn-grp">
+                            <button onclick="addOne(this, 165)" class="btn">+</button>
+                            <button onclick="subtractOne(this, 165)" class="btn">-</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <div class="part1">
+                        <div class="img" id="img-p13"></div>
+                    </div>
+                    <div class="part2">
+                        <div class="name">Name: Digital Torque Screwdriver</div>
+                        <div class="rank">Rank: 3</div>
+                        <div class="price">Price: $65</div>
+                        <label>Qty:</label>
+                        <input type="number" class="qty-input" value="0" readonly><br>
+                        <label>Total Price:</label>
+                        <input type="number" class="total-input" value="0" readonly>
+                        <div class="btn-grp">
+                            <button onclick="addOne(this, 65)" class="btn">+</button>
+                            <button onclick="subtractOne(this, 65)" class="btn">-</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <div class="part1">
+                        <div class="img" id="img-p14"></div>
+                    </div>
+                    <div class="part2">
+                        <div class="name">Name: Industrial Rotary Hammer Drill</div>
+                        <div class="rank">Rank: 3</div>
+                        <div class="price">Price: $210</div>
+                        <label>Qty:</label>
+                        <input type="number" class="qty-input" value="0" readonly><br>
+                        <label>Total Price:</label>
+                        <input type="number" class="total-input" value="0" readonly>
+                        <div class="btn-grp">
+                            <button onclick="addOne(this, 210)" class="btn">+</button>
+                            <button onclick="subtractOne(this, 210)" class="btn">-</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <div class="part1">
+                        <div class="img" id="img-p15"></div>
+                    </div>
+                    <div class="part2">
+                        <div class="name">Name: Structural Lag Screws (500 Pack)</div>
+                        <div class="rank">Rank: 3</div>
+                        <div class="price">Price: $42</div>
+                        <label>Qty:</label>
+                        <input type="number" class="qty-input" value="0" readonly><br>
+                        <label>Total Price:</label>
+                        <input type="number" class="total-input" value="0" readonly>
+                        <div class="btn-grp">
+                            <button onclick="addOne(this, 42)" class="btn">+</button>
+                            <button onclick="subtractOne(this, 42)" class="btn">-</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <div class="part1">
+                        <div class="img" id="img-p16"></div>
+                    </div>
+                    <div class="part2">
+                        <div class="name">Name: Pneumatic Collated Nails (1000 Pack)</div>
+                        <div class="rank">Rank: 3</div>
+                        <div class="price">Price: $38</div>
+                        <label>Qty:</label>
+                        <input type="number" class="qty-input" value="0" readonly><br>
+                        <label>Total Price:</label>
+                        <input type="number" class="total-input" value="0" readonly>
+                        <div class="btn-grp">
+                            <button onclick="addOne(this, 38)" class="btn">+</button>
+                            <button onclick="subtractOne(this, 38)" class="btn">-</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <div class="part1">
+                        <div class="img" id="img-p17"></div>
+                    </div>
+                    <div class="part2">
+                        <div class="name">Name: Titanium Construction Hammer</div>
+                        <div class="rank">Rank: 3</div>
+                        <div class="price">Price: $88</div>
+                        <label>Qty:</label>
+                        <input type="number" class="qty-input" value="0" readonly><br>
+                        <label>Total Price:</label>
+                        <input type="number" class="total-input" value="0" readonly>
+                        <div class="btn-grp">
+                            <button onclick="addOne(this, 88)" class="btn">+</button>
+                            <button onclick="subtractOne(this, 88)" class="btn">-</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <div class="part1">
+                        <div class="img" id="img-p18"></div>
+                    </div>
+                    <div class="part2">
+                        <div class="name">Name: 60cc Commercial Gas Chainsaw</div>
+                        <div class="rank">Rank: 3</div>
+                        <div class="price">Price: $320</div>
+                        <label>Qty:</label>
+                        <input type="number" class="qty-input" value="0" readonly><br>
+                        <label>Total Price:</label>
+                        <input type="number" class="total-input" value="0" readonly>
+                        <div class="btn-grp">
+                            <button onclick="addOne(this, 320)" class="btn">+</button>
+                            <button onclick="subtractOne(this, 320)" class="btn">-</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="checkout-container">
+                <a href="confirm.html" onclick="saveCartAndProceed(event)" class="btn-confirm">Confirm Sell</a>
+            </div>
+        </div>
+    </header>
+
+    <script src="script2.js"></script>
+</body>
+</html>

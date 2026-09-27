@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toolix - Sales Summary</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar section-content">
+            <a href="index.html" class="nav-logo">
+                <h2 class="logo-text">Toolix</h2>
+            </a>
+            
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="material-symbols-outlined">close</button>
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="menu.html" class="nav-link">Items</a></li>
+                <li class="nav-item"><a href="Login.html" class="nav-link">Log in</a></li>
+                <li class="nav-item"><a href="inquiry.html" class="nav-link">Inquiries</a></li>
+            </ul>
+
+            <button id="menu-open-button" class="material-symbols-outlined">menu</button>
+        </nav>
+        
+        <div class="container">
+            <div class="confirm-card">
+                <div class="confirm-title">Sales Summary</div>
+                <div id="sales-list" class="sales-list"></div>
+                <div class="grand-total-box">
+                    <span>Grand Total:</span>
+                    <span id="grand-total-val">$0</span>
+                </div>
+                <div class="confirm-actions">
+                    <button onclick="executeFinalConfirm()" class="btn-confirm">Confirm Order</button>
+                    <a href="index.html" class="btn-back">Back to Products</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script src="script2.js"></script>
+</body>
+</html>

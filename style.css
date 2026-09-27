@@ -1,0 +1,242 @@
+        * {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #ffffff;
+            --secondary-color: #ff9800;
+            --bg-color: #800000;
+            --font-size-xsmall: 0.8rem;
+            --font-size-small: 1rem;
+            --font-size-mid: 2rem;
+            --font-size-large: 3rem;
+            --bold-font-weight: 700;
+            --black: #000;
+
+            --font-size-m: 1.3rem;
+            --font-size-1: 1.6rem;
+            --font-size-xl: 1.8rem;
+            --font-size-xxl: 2.3rem;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        button {
+            cursor: pointer;
+            border: none;
+            background: none;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            z-index: 5;
+            background-color: maroon;
+        }
+
+        .section-content {
+            padding: 1rem;
+            padding-left: 3.4rem;
+            margin: 0rem;
+        } 
+
+        header .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .navbar .nav-logo .logo-text {
+            color: var(--primary-color);
+        }
+
+        .navbar .nav-menu {
+            display: flex;
+            gap: calc(5/8 * 1rem);
+            align-items: center;
+        }
+
+        .navbar .nav-menu .nav-link {
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 0.8rem;
+            transition: 0.3s ease;
+        }
+
+        .navbar .nav-logo {
+            color: var(--primary-color);
+        }
+
+        .navbar .nav-menu .nav-link:hover {
+            transform: scale(1.2);
+            padding: 0.625rem calc(8/9 * 1rem);
+            background-color: var(--secondary-color);
+            border-radius: 10%;
+        }
+
+        /* Hide buttons on desktop */
+        .navbar :where(#menu-close-button, #menu-open-button) {
+            display: none;
+        }
+
+        .hero-section {
+            min-height: 100vh;
+            background: var(--bg-color);
+            padding-top: 80px; /* Offset to prevent overlap with fixed header */
+        }
+
+        .hero-section .section-content {
+            display: flex;
+            align-items: center;
+            min-height: calc(100vh - 80px);
+            color: var(--primary-color);
+            justify-content: space-between;
+        }
+
+        .hero-section .hero-details .title {
+            font-size: var(--font-size-mid);
+            color: var(--secondary-color);
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .hero-section .hero-details .subtitle {
+            margin-top: calc(1/2 * 1rem);
+            max-width: 70%;
+            /* Fixed: Changed font-size to font-weight as intended */
+            font-weight: var(--bold-font-weight); 
+            font-size: var(--font-size-m);
+        }
+
+        .hero-section .hero-details .description {
+            max-width: 70%;
+            font-size: var(--font-size-xsmall);
+            margin: calc(24/16 * 1rem) 0 calc(40/8 * 1rem);
+        }
+
+        .hero-section .hero-details .buttons {
+            display: flex;
+            gap: calc(23/16 * 1rem);
+        }
+
+        .hero-section .hero-details .button {
+            padding: calc(5/8 * 1rem) calc(26/16 * 1rem);
+            color: var(--primary-color);
+            background: var(--secondary-color);
+            border-radius: calc(30/16 * 1rem);
+            font-weight: var(--bold-font-weight);
+            border: calc(1/8 * 1rem) solid transparent;
+            transition: 0.3s ease;
+        }
+
+        .hero-section .hero-details .button:hover,
+        .hero-section .hero-details .contact-us {
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+            background: transparent;
+        }
+
+        .hero-section .hero-details .contact-us:hover {
+            color: var(--primary-color);
+            border-color: var(--secondary-color);
+            background: var(--secondary-color);
+        }
+
+        .hero-section .hero-image-wrapper {
+            max-width: calc(500/16 * 1rem);
+            margin-right: calc(15/8 * 1rem);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        @media screen and (max-width: 56.25rem) {
+            :root {
+                --font-size-m: 1rem;
+                --font-size-1: 1.3rem;
+                --font-size-xl: 1.5rem;
+                --font-size-xxl: 1.8rem;
+            }
+
+            .navbar :where(#menu-close-button, #menu-open-button) {
+                display: block;
+                font-size: var(--font-size-xl);
+            }
+
+            .navbar #menu-open-button {
+                color: var(--primary-color);
+            }
+
+            .navbar #menu-close-button {
+                position: absolute;
+                right: calc(30/16 * 1rem);
+                top: calc(30/16 * 1rem);
+                color: var(--black);
+            }
+
+            .navbar .nav-menu {
+                position: fixed;
+                left: calc(-300/16 * 1rem);
+                top: 0;
+                width: calc(300/16 * 1rem);
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: calc(25/4 * 1rem);
+                padding-right: 2rem;
+                background: var(--primary-color);
+                /* Fixed: Added 's' to time value for valid transition syntax */
+                transition: left 0.3s ease; 
+                z-index: 10;
+            }
+
+            body.show-mobile-menu .navbar .nav-menu {
+                left: 0;
+            }
+
+            .navbar .nav-menu .nav-link {
+                color: var(--black);
+                display: block;
+                margin-top: calc(17/16 * 1rem);
+                font-size: var(--font-size-m);
+            }
+
+            /* Responsive Hero Section Adjustments */
+            .hero-section .section-content {
+                flex-direction: column-reverse;
+                justify-content: center;
+                text-align: center;
+                padding: 2rem;
+                gap: 2rem;
+            }
+
+            .hero-section .hero-details .subtitle,
+            .hero-section .hero-details .description {
+                max-width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-section .hero-details .buttons {
+                justify-content: center;
+            }
+            
+            .hero-section .hero-image-wrapper {
+                margin-right: 0;
+            }
+        }
